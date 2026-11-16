@@ -17,7 +17,7 @@ Cards, `CLAUDE.md`, `AGENTS.md`, docs and code comments describe how the code wo
 
 One rule lives in one file. Other files link. Do not copy catalogs from `src/`.
 
-- Router: `SKILL.md`
+- Router: `SKILL.md` is the only list of cards and the task-to-card map. `CLAUDE.md`, `AGENTS.md` and READMEs link to it and name no card list of their own. `npm run lint` (`skill index`) fails on a card missing from it or a reference to a card that does not exist
 - Card: one topic, keep it short
 - Command: `.claude/commands/*.md` is a pointer
 - Evidence: `src/`, `package.json`, `src/locale/locales.json`, `DEVELOPING.md`

@@ -16,17 +16,7 @@ Index: [`.agents/skills/churchcrm/SKILL.md`](.agents/skills/churchcrm/SKILL.md).
 How to edit a skill: [`.agents/skills/churchcrm/skill-architecture.md`](.agents/skills/churchcrm/skill-architecture.md).
 Load the card for the task. Do not load every skill.
 
-| Task | Start |
-|------|-------|
-| Review a PR | `maintainer-review-gates.md` → `pr-review.md` |
-| Address review comments | `.agents/skills/pr-review-fix.md` → `git-workflow.md` |
-| Commit / PR | `git-workflow.md` |
-| UI | `frontend-development.md` |
-| i18n | `i18n-localization.md` |
-| Security | `security-best-practices.md` → `authorization-security.md` |
-| Plugin | `plugin-system.md` → `plugin-registry.md` |
-| Tests | `ci-test-infrastructure.md` → PHP tests or `cypress-testing.md` |
-| API | `api-development.md` → `service-layer.md` |
+Task to card map: the Example Workflows list in the index.
 
 Always-on:
 

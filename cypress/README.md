@@ -9,7 +9,7 @@ Overview
 - `cypress/split-timings.json` — spec durations that balance the CI shards.
 - `cypress/videos/`, `cypress/screenshots/`, `cypress/downloads/` — runtime artifacts (gitignored).
 
-Rules and runbooks live in the skill cards: `.agents/skills/churchcrm/cypress-testing.md` (writing specs and permission tests) and `ci-test-infrastructure.md` (test stack, CI, shards, test database, cleanup guard).
+Rules and runbooks live in the skill cards: indexed in `.agents/skills/churchcrm/SKILL.md` (Testing).
 
 Running tests (recommended)
 - Open interactive runner (local):

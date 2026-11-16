@@ -112,11 +112,34 @@ Community feedback policy (Feature Proposals and RFC Reviews Discussions): [`doc
 | [PR Review Fix](../pr-review-fix.md) | Address review comments |
 | [Skill architecture](./skill-architecture.md) | Edit a skill |
 | [PR Description Guidelines](../pr-description-guidelines.md) | Title / body |
+| [Milestone Sweep](../milestone-sweep.md) | Milestone hygiene |
 | [Development Workflows](./development-workflows.md) | Local setup commands |
 | [Code Standards](./code-standards.md) | Always-on floor |
 
+## Releases, docs & maintenance
+
+| Skill | When to Use |
+|-------|------------|
+| [Release Notes](./release-notes.md) | Write release notes |
+| [Release Announcement](./release-announcement.md) | Announce a release |
+| [Social Media Release Posts](./social-media-release.md) | Release posts |
+| [Documentation Content Architecture](./wiki-documentation.md) | Docs site content |
+| [Repo Health Check](./repo-health.md) | Repository audit |
+| [Security Report Triage](./security-report-triage.md) | Incoming security reports |
+| [Hosted Remote Config](./hosted-remote-config.md) | Hosted config branches |
+| [Playwright Workflow Development](./playwright-workflow-development.md) | Capture specs |
+| [Observability, Logging & Metrics](./observability-logging-metrics.md) | Logs and metrics |
+| [Modern PHP Frameworks](./modern-php-frameworks.md) | PHP 8.4+ patterns |
+| [Custom Field ACL](./custom-field-acl.md) | Field-level access |
+
 ## Example Workflows
 
+- **Commit or PR**: `git-workflow.md`
+- **UI**: `frontend-development.md`
+- **Tests or red CI**: `cypress-testing.md` → `ci-test-infrastructure.md`
+- **Security**: `security-best-practices.md` → `authorization-security.md`
+- **Plugin**: `plugin-system.md` → `plugin-registry.md`
+- **API**: `api-development.md` → `service-layer.md`
 - **Review a PR**: `maintainer-review-gates.md` → `pr-review.md`. Draft only.
 - **Church-review an issue**: `church-review.md`. Draft only.
 - **Address PR comments**: `../pr-review-fix.md` → `git-workflow.md`

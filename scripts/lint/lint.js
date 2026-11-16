@@ -51,6 +51,7 @@ const checks = {
     'cypress db access': script('lint/validate-cypress-db-access.js'),
     'capture used-in': script('lint/validate-capture-used-in.js'),
     'seed data only': script('lint/validate-seed-data-only.js'),
+    'skill index': script('lint/validate-skill-index.js'),
     'mysql upgrade syntax': script('lint/validate-mysql-upgrade-syntax.js'),
     'mysql index length': script('lint/validate-mysql-index-length.js'),
     'upgrade handoff': script('lint/validate-upgrade-handoff.js'),
