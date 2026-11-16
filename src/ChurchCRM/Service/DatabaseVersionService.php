@@ -2,6 +2,9 @@
 
 namespace ChurchCRM\Service;
 
+use PDO;
+use Propel\Runtime\Propel;
+
 class DatabaseVersionService
 {
     // The documented minimums, kept in step with supported-databases.json by
@@ -49,12 +52,21 @@ class DatabaseVersionService
         return $parsed + ['supported' => version_compare($parsed['version'], $minimum, '>=')];
     }
 
+    private static function readServerVersion(): ?string
+    {
+        try {
+            return Propel::getServiceContainer()->getConnection()->getAttribute(PDO::ATTR_SERVER_VERSION);
+        } catch (\Throwable) {
+            return null;
+        }
+    }
+
     /**
      * What is wrong with the database server, or null when it is supported.
      */
     public static function getUnsupportedMessage(?string $serverVersion = null): ?string
     {
-        $result = self::check($serverVersion ?? SystemService::getDBServerVersion());
+        $result = self::check($serverVersion ?? self::readServerVersion());
         if ($result['supported']) {
             return null;
         }
